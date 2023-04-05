@@ -12,3 +12,13 @@ npx prisma studio
 ```js
 npx prisma generate
 ```
+
+### Create post
+
+```js
+await prisma.post.create({
+    data: {
+        title: 'Hi',
+    },
+});
+```
